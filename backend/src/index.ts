@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import { login } from './auth';
 import { getTickets, bookTicket } from './ticketController';
 import redis from './redisClient';
+import { verifyToken } from './middleware';
 
 dotenv.config();
 
@@ -13,7 +14,7 @@ app.use(express.json());
 
 app.post('/api/login', login);
 app.get('/api/tickets', getTickets);
-app.post('/api/book', bookTicket);
+app.post('/api/book', verifyToken, bookTicket);
 
 const PORT = process.env.PORT || 5000;
 
