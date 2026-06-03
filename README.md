@@ -12,8 +12,8 @@ This project is a high-concurrency ticket booking system built for the **Hamrah 
 ## 📸 User Interface
 *(Below is the modern Glassmorphism UI implemented exclusively with React)*
 
-![UI Screenshot](./frontend/public/Screenshot1.png)
-![UI Screenshot](./frontend/public/Screenshot2.png)
+![UI Screenshot](./frontend/public/screenshot1.png)
+![UI Screenshot](./frontend/public/screenshot2.png)
 
 ## 🏗️ High-level Architecture
 The architecture is designed to handle extreme concurrency using an In-Memory data store for atomic operations.
